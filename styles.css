@@ -1,0 +1,39 @@
+/* Reset some default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add a border and background color to sections */
+.section {
+    border: 1px solid black;
+    background-color: #f7f7f7; /* Set your desired background color */
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Add responsive styles using media queries */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Tablet view styles */
+    .section {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Mobile view styles */
+    .section {
+        width: 100%;
+    }
+}
+
+/* Position section titles */
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3498db; /* Set your desired section title background color */
+    color: #fff; /* Set text color for better readability */
+    padding: 5px 10px;
+}
