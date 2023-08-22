@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Examples</title>
+</head>
+<body>
+  <h1>JavaScript Examples</h1>
+
+  <h2>Hello World</h2>
+  <p id="demo1"></p>
+  <script>
+    document.getElementById("demo1").textContent = "Hello, World!";
+  </script>
+
+  <h2>Variables and Arithmetic</h2>
+  <p id="demo2"></p>
+  <script>
+    let num1 = 10;
+    let num2 = 20;
+    let sum = num1 + num2;
+    document.getElementById("demo2").textContent = "Sum: " + sum;
+  </script>
+
+  <h2>Functions</h2>
+  <p id="demo3"></p>
+  <script>
+    function greet(name) {
+      return "Hello, " + name + "!";
+    }
+    document.getElementById("demo3").textContent = greet("Alice");
+  </script>
+
+  <h2>Arrays</h2>
+  <p id="demo4"></p>
+  <script>
+    let colors = ["red", "green", "blue"];
+    document.getElementById("demo4").textContent = colors.join(", ");
+  </script>
+
+  <h2>Objects</h2>
+  <p id="demo5"></p>
+  <script>
+    let person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 30
+    };
+    document.getElementById("demo5").textContent = person.firstName + " " + person.lastName;
+  </script>
+
+  <h2>Conditional Statements</h2>
+  <p id="demo6"></p>
+  <script>
+    let temperature = 25;
+    if (temperature > 30) {
+      document.getElementById("demo6").textContent = "It's hot!";
+    } else if (temperature > 20) {
+      document.getElementById("demo6").textContent = "It's warm.";
+    } else {
+      document.getElementById("demo6").textContent = "It's cool.";
+    }
+  </script>
+
+  <h2>Loops</h2>
+  <p id="demo7"></p>
+  <script>
+    let numbers = "";
+    for (let i = 1; i <= 5; i++) {
+      numbers += i + " ";
+    }
+    document.getElementById("demo7").textContent = numbers;
+  </script>
+</body>
+</html>
